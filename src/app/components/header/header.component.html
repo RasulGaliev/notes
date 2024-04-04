@@ -1,1 +1,20 @@
-<p>header works!</p>
+<header class="header">
+  <div class="container header-container">
+    <nav class="navbar">
+      <ul>
+        <li class="nav-item logo">
+          <a class="nav-link " [routerLink]="mainPageUrl"><i>NOTES</i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="notesPageUrl">Заметки</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="tagsUrl">Теги</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="remindersPageUrl">Напоминания</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
